@@ -1,0 +1,26 @@
+class Car{
+	String name;
+	
+	Car(){
+		System.out.println("Unparameterised Constructor.");
+	}
+	
+	Car(String name){
+		this.name = name;
+	}
+	
+	void running() {
+		System.out.println(name + " car is running.");
+	}
+}
+
+
+public class Practice {
+	public static void main(String[] args) {
+		Car cr1 = new Car("Bmw");
+		
+		cr1.running();
+		System.out.println(cr1);
+	}
+
+}

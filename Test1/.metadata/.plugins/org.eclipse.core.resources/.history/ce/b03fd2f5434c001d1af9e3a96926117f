@@ -1,0 +1,10 @@
+
+abstract class Car {
+	int a = 10;
+	
+	public void Hello() {
+		System.out.println("Hello");
+	}
+	
+	abstract void go();
+}

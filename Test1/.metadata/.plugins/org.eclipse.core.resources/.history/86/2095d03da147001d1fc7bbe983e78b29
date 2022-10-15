@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+class Student{
+	int id;
+	String name;
+	int marks;
+	String result;
+	
+	Student(int sid, String sname, int smarks) {
+		this.id = sid;
+		this.name = sname;
+		this.marks = smarks;
+	}
+	
+	void result(){
+		if(marks >= 40) {
+			result = "Pass";
+		}
+		else {
+			result = "Fail";
+		}
+	}
+	
+	void diaplay() {
+		System.out.println("The student id is : " + id);
+		System.out.println("The student name is : " + name);
+		System.out.println("The marks of the student are : " + marks);
+		System.out.println("Result : " + result);
+	}
+	
+}
+
+
+public class Result {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the number of students : ");
+		int nums = s.nextInt();
+		
+		//Student[] students = new Student[nums];
+		
+		for (int i = 0; i<nums; i++) {
+			System.out.println("Enter the id of the student : ");
+			int sid = s.nextInt();
+			System.out.println("Enter the name of the student : ");
+			String sname = s.next();
+			System.out.println("Enter the marks obtained by the student : ");
+			int smarks = s.nextInt();
+			
+			Student st = new Student(sid, sname, smarks);
+			st.result();
+			st.diaplay();
+		}
+		s.close();
+	
+	}
+
+}

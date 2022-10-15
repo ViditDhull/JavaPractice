@@ -1,0 +1,4 @@
+
+abstract class Car {
+	abstract void go();
+}

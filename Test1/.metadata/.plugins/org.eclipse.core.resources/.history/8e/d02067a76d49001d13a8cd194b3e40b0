@@ -1,0 +1,25 @@
+class Car{
+	String name;
+	
+	Car(String name){
+		this.name = name;
+	}
+	
+	void running() {
+		System.out.println(name + " car is running.");
+	}
+}
+class Test1{
+	void display(Car car) {
+		System.out.println(car.name + " is running.");
+	}
+}
+public class Practice {
+	public static void main(String[] args) {
+		Car cr1 = new Car("Bmw");
+		Car cr2 = new Car("M power");
+		cr1.running();
+		cr2.running();
+	}
+
+}

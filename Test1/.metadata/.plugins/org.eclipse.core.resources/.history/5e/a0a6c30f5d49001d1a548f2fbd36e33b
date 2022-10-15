@@ -1,0 +1,17 @@
+class Car{
+	String name;
+}
+class Test1{
+	void display(Car car) {
+		System.out.println(car + " is running.");
+	}
+}
+public class Practice {
+	public static void main(String[] args) {
+		Car cr1 = new Car();
+		cr1.name = "BMW";
+		Test1 tst = new Test1();
+		tst.display(cr1);
+	}
+
+}

@@ -1,0 +1,12 @@
+
+Gsquid:S1220""Move this file to a named package.H‚RMINORZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÛèÔû8Šžàº¼0HŽRMAJORZ
+CODE_SMELL
+q
+squid:S106
+"9Replace this use of System.out or System.err by a logger.(ºÎÚÓÿÿÿÿÿ8¯´ÒÏ½0HšRMAJORZ
+CODE_SMELL
+_squid:S2387"$"a" is the name of a field in "Car".(¹åÇ¨ûÿÿÿÿ8ÁñæÏ½0H›RBLOCKERZ
+CODE_SMELL

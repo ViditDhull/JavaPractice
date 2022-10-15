@@ -1,0 +1,14 @@
+class Vehicle extends Car{
+	void go() {
+		System.out.println("The car is going.");
+	}
+}
+public class Practice {
+	public static void main(String[] args) {
+		Vehicle cr = new Vehicle();
+		cr.go();
+		cr.hello();
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+
+abstract class Car {
+	int a = 10;
+	
+	abstract void go();
+}
