@@ -1,0 +1,8 @@
+
+public class Car {
+	
+	public void Hello() {
+		System.out.println("Hello");
+	}
+	
+}
