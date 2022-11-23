@@ -1,0 +1,23 @@
+class BankAccount{
+	int accountNumber;
+	int totalBalance;
+	
+	BankAccount(int accn, int bal){
+		this.accountNumber = accn;
+		this.totalBalance = bal;
+	}
+	
+	void deposit(int amt) {
+		this.totalBalance = this.totalBalance + amt;
+		System.out.println("The ");
+	}
+}
+
+public class Account {
+	public static void main(String[] args) {
+		int a = 10;
+		int b = 11;
+		System.out.println("The sum is ", a+ b);
+	}
+
+}
