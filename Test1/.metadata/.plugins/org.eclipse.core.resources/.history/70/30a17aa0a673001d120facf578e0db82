@@ -1,0 +1,60 @@
+import java.util.ArrayList;
+
+
+class Player{
+	String player_name;
+	int total_run;
+	int no_of_wicket;
+	int no_of_matches;
+	String country;
+	int no_of_century;
+	String category;
+	
+	
+	public Player(String player_name, int total_run, int no_of_wicket, int no_of_matches, String country,
+			int no_of_century, String category) {
+		super();
+		this.player_name = player_name;
+		this.total_run = total_run;
+		this.no_of_wicket = no_of_wicket;
+		this.no_of_matches = no_of_matches;
+		this.country = country;
+		this.no_of_century = no_of_century;
+		this.category = category;
+	}
+	
+	public void show(){
+		System.out.println(this.player_name + this.total_run + this.no_of_wicket + this.no_of_matches + this.country + this.no_of_century + this.category);
+	}
+	
+}
+
+
+public class Practice{
+	public static void main(String[] args) {
+		Player p1 = new Player("P1", 50, 7, 15, "India", 2, "B");
+		Player p2 = new Player("P2", 550, 4, 25, "New Zealand", 2, "c");
+		Player p3 = new Player("P3", 450, 8, 35, "Sri Lanka", 2, "d");
+		Player p4 = new Player("P4", 250, 6, 45, "Australia", 2, "e");
+		Player p5 = new Player("P5", 350, 1, 55, "Bangladesh", 2, "f");
+		
+		ArrayList<Player> al = new ArrayList<Player>();
+		al.add(p1);
+		al.add(p2);
+		al.add(p3);
+		al.add(p4);
+		al.add(p5);
+
+		
+
+		for (Player p : al) {
+			p.show();
+			if (p.total_run < 100) {
+				al.remove(p);
+			}
+		}
+		
+	
+	}
+	
+}

@@ -1,0 +1,16 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Filewriteread {
+	public static void main(String[] args) throws IOException {
+
+		FileWriter fw = new FileWriter("Test.txt");
+		fw.write("Java File Handling: In this video, we will see how files\n"
+				+ "are handled in the Java programming language. In this \n"
+				+ "video of our java complete course, we will see how java\n"
+				+ "programming can be leveraged to read, write, create and\n"
+				+ "delete files");
+		fw.close();
+	}
+}

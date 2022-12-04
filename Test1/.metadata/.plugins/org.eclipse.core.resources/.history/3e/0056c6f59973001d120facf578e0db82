@@ -1,0 +1,18 @@
+abstract class animals{
+	abstract void sound();
+}
+
+class dog extends animals{
+	
+	public void sound() {
+		System.out.println("Barks");
+	}
+}
+
+public class main {
+	public main() {
+		dog d1 = new dog();
+		d1.sound();
+	}
+
+}

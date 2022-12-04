@@ -1,0 +1,32 @@
+interface kingdom{
+	abstract void move();
+}
+
+
+class cat implements kingdom{
+	public void move() {
+		System.out.println("The cat is moving.");
+	}
+}
+
+abstract class animals{
+	abstract void sound();
+}
+
+class dog extends animals{
+	
+	public void sound() {
+		System.out.println("Barks");
+	}
+}
+
+public class main {
+	public static void main(String[] args) {
+		dog d1 = new dog();
+		d1.sound();
+		
+		cat c1 = new cat();
+		c1.move();
+	}
+
+}

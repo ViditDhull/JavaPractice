@@ -1,0 +1,55 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+
+class Player{
+	String player_name;
+	int total_run;
+	int no_of_wicket;
+	int no_of_matches;
+	String country;
+	int no_of_century;
+	String category;
+	
+	
+	public Player(String player_name, int total_run, int no_of_wicket, int no_of_matches, String country,
+			int no_of_century, String category) {
+		this.player_name = player_name;
+		this.total_run = total_run;
+		this.no_of_wicket = no_of_wicket;
+		this.no_of_matches = no_of_matches;
+		this.country = country;
+		this.no_of_century = no_of_century;
+		this.category = category;
+	}
+}
+
+public class CollectionArrayObject {
+	public static void main(String[] args) {
+		Player p1 = new Player("P1", 550, 7, 10, "India", 2, "b");
+		Player p2 = new Player("P2", 50, 5, 7, "India", 3, "c");
+		Player p3 = new Player("P3", 350, 20, 19, "India", 4, "d");
+		Player p4 = new Player("P4", 250, 17, 11, "India", 5, "e");
+		Player p5 = new Player("P5", 70, 11, 13, "India", 6, "f");
+		
+		ArrayList<Player> alp = new ArrayList<Player>();
+		alp.add(p1);
+		alp.add(p2);
+		alp.add(p3);
+		alp.add(p4);
+		alp.add(p5);
+		
+		Iterator it = alp.iterator();
+		
+		while(it.hasNext()){
+			Player p = (Player)it.next();
+			
+		}
+		
+		for(int i; i < alp.size();i++) {
+			if(alp.get(i).total_run < 100) {
+				alp.remove(i);
+			}
+		}
+	}
+}

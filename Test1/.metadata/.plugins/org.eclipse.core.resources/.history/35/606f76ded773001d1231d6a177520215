@@ -1,0 +1,10 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Filewriteread {
+	public static void main(String[] args) throws IOException {
+		File file = new File("Test.txt");
+		file.createNewFile();
+	}
+}

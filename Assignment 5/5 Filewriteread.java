@@ -1,0 +1,41 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Filewriteread {
+	public static void main(String[] args) throws IOException {
+		int char_count = 0;
+		int word_count = 0;
+		int line_count = 1;
+		File file = new File("Test.txt");
+		file.createNewFile();
+		FileWriter fw = new FileWriter("Test.txt");
+		fw.write("Line1\nLine2");
+		fw.close();
+		FileReader fr;
+		try {
+			fr = new FileReader("Test.txt");
+			int data = fr.read();
+			while(data!=-1) {
+				char_count = char_count + 1;
+				if((char)data == ' ' || (char)data == '\n') {
+					word_count = word_count + 1;
+				}
+				if((char)data == '\n') {
+					line_count = line_count +1;
+				}
+				data = fr.read();
+			}
+			System.out.println(char_count);
+			System.out.println(word_count);
+			System.out.println(line_count);
+			fr.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			System.out.println("File not found.");
+		}
+		
+	}
+}
